@@ -248,20 +248,22 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
             
-            {/* Image Side - Spans left-to-center (8 cols) */}
-            <div className="col-span-12 lg:col-span-8 lg:row-start-1 relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-xl z-10 border border-zinc-200/20 dark:border-zinc-800/20 parallax-image-container">
-              <Image
-                src="/about.jpg"
-                alt="Instalaciones Garden Center Linda Vista"
-                fill
-                className="object-cover will-change-transform"
-                sizes="(max-w-1024px) 100vw, 65vw"
-                priority
-              />
+            {/* Image Side - Spans left-to-center (6 cols) */}
+            <div className="col-span-12 lg:col-span-6 lg:col-start-1 lg:row-start-1 relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-xl z-10 border border-zinc-200/20 dark:border-zinc-800/20 bg-white p-8 sm:p-12 lg:pl-16 lg:pr-40 flex items-center justify-start parallax-image-container">
+              <div className="relative w-full h-full">
+                <Image
+                  src="/about.jpg"
+                  alt="Instalaciones Garden Center Linda Vista"
+                  fill
+                  className="object-contain object-left will-change-transform"
+                  sizes="(max-w-1024px) 100vw, 65vw"
+                  priority
+                />
+              </div>
             </div>
 
-            {/* Text Side - Floating Glass Card overlaps the Image (6 cols) */}
-            <div className="col-span-12 lg:col-span-6 lg:col-start-7 lg:row-start-1 relative z-20 flex flex-col gap-6 lg:-ml-24 xl:-ml-32 mt-6 lg:mt-0 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md p-8 sm:p-12 rounded-3xl border border-zinc-200/50 dark:border-zinc-800/50 shadow-2xl shadow-zinc-900/5">
+            {/* Text Side - Floating Glass Card overlaps the Image (7 cols) */}
+            <div className="col-span-12 lg:col-span-7 lg:col-start-6 lg:row-start-1 relative z-20 flex flex-col gap-6 lg:-ml-12 mt-6 lg:mt-0 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-md p-8 sm:p-12 rounded-3xl border border-zinc-200/50 dark:border-zinc-800/50 shadow-2xl shadow-zinc-900/5">
               <span className="text-brand font-bold text-xs uppercase tracking-[0.2em]">
                 {t("home.about.badge")}
               </span>
