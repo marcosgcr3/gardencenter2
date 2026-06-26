@@ -249,7 +249,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative">
             
             {/* Image Side - Spans left-to-center (8 cols) */}
-            <div className="col-span-12 lg:col-span-8 relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-xl z-10 border border-zinc-200/20 dark:border-zinc-800/20 parallax-image-container">
+            <div className="col-span-12 lg:col-span-8 lg:row-start-1 relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-xl z-10 border border-zinc-200/20 dark:border-zinc-800/20 parallax-image-container">
               <Image
                 src="/about.jpg"
                 alt="Instalaciones Garden Center Linda Vista"
